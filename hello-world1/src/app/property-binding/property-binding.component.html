@@ -1,0 +1,16 @@
+<p>property-binding works!</p>
+
+<input type="text" placeholder="Enter the name" [value]="name"/>
+<br><br>
+
+<hr>
+
+<div hidden="{{isHidden}}">
+    Hide a content using String interpolation
+</div>
+
+<br><br>
+
+<div [hidden]="isHidden">
+    Hide a content using property binding
+</div>
