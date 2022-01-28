@@ -8,6 +8,8 @@ import { StudentComponent } from './student/student.component';
 import { DepartmentComponent } from './department/department.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     StudentComponent,
     DepartmentComponent,
     StringInterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    ClassBindingComponent,
+    StyleBindingComponent
   ],
   imports: [
     BrowserModule,
