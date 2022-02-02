@@ -1,0 +1,18 @@
+<p>eventbinding1 works!</p>
+
+<button (click)="onClick()">Click Event</button>
+<img src="../../assets/nasa.jpg" (click)="imgClick()" alt=""/>
+<br><br>
+
+<button (click)="onClick1($event)" value="Dollar Event data">Dollar Variable</button>
+
+<br><br>
+
+<input #inputname type="text" placeholder="Enter the name"/>
+<br>
+<button (click)="onSend(inputname)">Send</button>
+
+<hr>
+<input #inputname1 type="text" placeholder="Enter the name"/>
+<br>
+<button (click)="onSend1(inputname1.value)">Send</button>

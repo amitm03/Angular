@@ -10,6 +10,11 @@ import { StringInterpolationComponent } from './string-interpolation/string-inte
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { Eventbinding1Component } from './eventbinding1/eventbinding1.component';
+import { IfdirectiveComponent } from './ifdirective/ifdirective.component';
+import { ForDirectiveComponent } from './for-directive/for-directive.component';
+import { EventBinding2Component } from './event-binding2/event-binding2.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,17 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     StringInterpolationComponent,
     PropertyBindingComponent,
     ClassBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    Eventbinding1Component,
+    IfdirectiveComponent,
+    ForDirectiveComponent,
+    EventBinding2Component
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent,EmployeeComponent]
