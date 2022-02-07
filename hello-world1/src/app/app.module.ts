@@ -19,6 +19,7 @@ import { SwitchdirectiveComponent } from './switchdirective/switchdirective.comp
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { ParentComponent } from './parent/parent.component';
+import { InbuildPipeComponent } from './inbuild-pipe/inbuild-pipe.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ParentComponent } from './parent/parent.component';
     SwitchdirectiveComponent,
     Child1Component,
     Child2Component,
-    ParentComponent
+    ParentComponent,
+    InbuildPipeComponent
 
   ],
   imports: [
