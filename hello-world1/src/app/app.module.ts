@@ -15,6 +15,10 @@ import { IfdirectiveComponent } from './ifdirective/ifdirective.component';
 import { ForDirectiveComponent } from './for-directive/for-directive.component';
 import { EventBinding2Component } from './event-binding2/event-binding2.component';
 import { FormsModule } from '@angular/forms';
+import { SwitchdirectiveComponent } from './switchdirective/switchdirective.component';
+import { Child1Component } from './child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { FormsModule } from '@angular/forms';
     Eventbinding1Component,
     IfdirectiveComponent,
     ForDirectiveComponent,
-    EventBinding2Component
+    EventBinding2Component,
+    SwitchdirectiveComponent,
+    Child1Component,
+    Child2Component,
+    ParentComponent
 
   ],
   imports: [

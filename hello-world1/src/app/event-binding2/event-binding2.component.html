@@ -11,7 +11,10 @@
 <input type="text" #inputname (change)="onChange(inputname)" placeholder="Enter the name">
 <hr>
 
-<input type="text" (keyup)="onKeyUp()" placeholder="Key Up Event"><br><br>
+<input type="text" #str (keyup)="onKeyUp(str)" placeholder="Key Up Event">
+<br><br>
+<p>{{strLength}}</p>
+<br><br>
 <input type="text" (keydown)="onKeyDown()" placeholder="key down Event">
 
 <hr>
@@ -21,6 +24,7 @@
     [(ngModel)]="Propertyname"
 -->
 
+<br><br>
 <input type="text" [(ngModel)]="myname" placeholder="Enter the name">
 <br>
 {{myname}}

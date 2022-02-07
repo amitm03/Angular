@@ -9,7 +9,7 @@ export class EventBinding2Component implements OnInit {
 
   result:number;
   myname:string='';
-
+  strLength:string='';
 
   constructor() { }
 
@@ -29,8 +29,10 @@ export class EventBinding2Component implements OnInit {
     name.style.color='white';
   }
 
-  onKeyUp(){
-    console.log("Key up event occur....")
+  onKeyUp(str){
+    console.log("Key up event occur...."+str.value)
+    console.log("Length of string :"+str.value.length+" characters")
+    this.strLength = "Length of string :"+str.value.length+" characters"
   }
 
   onKeyDown(){
