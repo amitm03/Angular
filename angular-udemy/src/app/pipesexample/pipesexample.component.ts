@@ -12,6 +12,11 @@ import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 })
 
 export class PipesexampleComponent implements OnInit,PipeTransform {
+  appStatus=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve('stable')
+    },2000)
+  });
 
   servers = [
     {
@@ -40,10 +45,14 @@ export class PipesexampleComponent implements OnInit,PipeTransform {
     }
   ];
 
+  
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  filteredStatus='';
 
   getStatusClass(server:{instanceType:string,name:string,status:string,started:Date}){
     return{
@@ -57,4 +66,13 @@ export class PipesexampleComponent implements OnInit,PipeTransform {
     return value.substr(0,10)+'....';
   }
 
+  onAddServer(){
+    this.servers.push({
+      instanceType:'small',
+      name:'New Server',
+      status:'stable',
+      started:new Date()
+    });
+  }
+ 
 }

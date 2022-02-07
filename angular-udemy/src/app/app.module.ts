@@ -9,6 +9,11 @@ import { SuccessalertComponent } from './successalert/successalert.component';
 import { WarningalertComponent } from './warningalert/warningalert.component';
 import { PipesexampleComponent } from './pipesexample/pipesexample.component';
 import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
+import { ShortenPipe } from './shorten.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
+import { ReversePipe } from './reverse.component';
+import { SortPipePipe } from './sort-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,16 @@ import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
     SuccessalertComponent,
     WarningalertComponent,
     PipesexampleComponent,
-    CustomPipeComponent
+    CustomPipeComponent,
+    ShortenPipe,
+    FilterPipe,
+    ReversePipe,
+    SortPipePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
