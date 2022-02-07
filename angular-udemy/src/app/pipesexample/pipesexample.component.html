@@ -1,0 +1,12 @@
+<p>pipesexample works!</p>
+<div class="container">
+    
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let server of servers" [ngClass]="getStatusClass(server)">
+                <strong>{{server.name | shorten}}</strong> |  {{server.instanceType|uppercase}} | {{server.started |date:'fullDate' |uppercase}} | <span class="badge">{{server.status}}</span>
+            </li>
+        </ul>
+    
+    
+</div>
+
