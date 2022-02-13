@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { ReversePipe } from './reverse.component';
 import { SortPipePipe } from './sort-pipe.pipe';
+import { ServiceDemoComponent } from './service-demo/service-demo.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SortPipePipe } from './sort-pipe.pipe';
     ShortenPipe,
     FilterPipe,
     ReversePipe,
-    SortPipePipe
+    SortPipePipe,
+    ServiceDemoComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
