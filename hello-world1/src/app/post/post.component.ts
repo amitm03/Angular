@@ -50,4 +50,10 @@ export class PostComponent implements OnInit {
 
     this.service.UpdateData(obj).subscribe((response)=>console.log(response))
   }
+
+  onDelete(id){
+    this.service.DeleteData(id).subscribe((response)=>{
+      console.log(response);
+    })
+  }
 }

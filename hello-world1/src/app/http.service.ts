@@ -23,4 +23,8 @@ export class HttpService{
     UpdateData(obj){
         return (this.http.put(`${this.url}/${obj.id}`,obj))
     }
+
+    DeleteData(id){
+        return (this.http.delete(`${this.url}/${id}`))
+    }
 }
