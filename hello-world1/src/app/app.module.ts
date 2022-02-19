@@ -34,6 +34,8 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { QueryparameterComponent } from './queryparameter/queryparameter.component';
+import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
+import { TdfComponent } from './tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { QueryparameterComponent } from './queryparameter/queryparameter.compone
     Page1Component,
     Page2Component,
     Page3Component,
-    QueryparameterComponent
+    QueryparameterComponent,
+    DemoBootstrapComponent,
+    TdfComponent
   ],
   imports: [
     BrowserModule,
