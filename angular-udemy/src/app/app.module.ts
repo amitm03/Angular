@@ -16,6 +16,10 @@ import { ReversePipe } from './reverse.component';
 import { SortPipePipe } from './sort-pipe.pipe';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
 import { PostComponent } from './post/post.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,16 @@ import { PostComponent } from './post/post.component';
     ReversePipe,
     SortPipePipe,
     ServiceDemoComponent,
-    PostComponent
+    PostComponent,
+    AccountComponent,
+    NewAccountComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule      
+    FormsModule,
+    HttpClientModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
